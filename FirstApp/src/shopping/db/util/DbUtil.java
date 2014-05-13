@@ -9,6 +9,7 @@ public class DbUtil {
 	public Connection getConnection() throws ClassNotFoundException,SQLException {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		Connection c=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","scott","tiger");
+		System.out.println("dddd");
 		return c;
 	
 	}
